@@ -1,0 +1,11 @@
+yes,si,oui
+house,casa,loger
+dog,perro,chien
+homework,tarea,devoirs
+woman,mujer,femme
+women,mujeres,femmes
+man,hombre,homme
+town,pueblo,ville
+me,yo,je
+love,amo,amour
+write,escribo,écris
