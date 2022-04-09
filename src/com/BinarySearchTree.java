@@ -16,6 +16,10 @@ public class BinarySearchTree<K,V> implements IBinarySearchTree<K,V> {
 	private TreeNode<K, V> root;
 	private Comparator<K> keyComparator;
 	
+	public BinarySearchTree() {
+		root= null;
+	}
+	
 	public BinarySearchTree(Comparator<K> _keyComparator) {
 		this.keyComparator = _keyComparator;
 		root = null;
@@ -387,5 +391,29 @@ public class BinarySearchTree<K,V> implements IBinarySearchTree<K,V> {
 		} else {
 			internalInsert(root, id, value);
 		}
+	}
+	
+	public V find2(K key) {
+		TreeNode focus= root;
+		
+		while(focus.id != key)
+		{
+			if((key.toString().compareTo((String)focus.id)<0))
+			{
+				focus= focus.getLeft();
+			}
+						
+			else
+			{
+				focus= focus.getRight();
+			}
+			
+			if(focus==null)
+			{
+				return null;
+			}
+		}
+		
+		return null;
 	}
 }

@@ -10,7 +10,7 @@ package com;
 public class TreeNode<K,V> {
 
 	private V value;
-	private K id;
+	K id;
 	private TreeNode<K, V> left;
 	private TreeNode<K, V> right;
 	private TreeNode<K, V> parent;
